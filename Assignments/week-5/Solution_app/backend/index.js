@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const { CardMiddleware } = require('./middleware/CardMiddleware');
 const { CardModel, AdminModel, UserModel } = require('./db/db');
 const { ValidateUserMiddleWare } = require('./middleware/UserInputValidation');
@@ -8,6 +9,10 @@ const PORT = 3000;
 
 //use the middleware
 app.use(express.json()); // to the parse the body
+
+app.use(cors({
+    origin:"http://localhost:5173"
+}))
 
 // also i need to create a middleware to check if the schema is right for that i need to create a zod validator
 // 1.create zod middleware for both get and post methods
