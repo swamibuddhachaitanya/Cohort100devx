@@ -1,0 +1,6 @@
+#TODO create frontend using react
+#TODO add the functionality to render all the present card(would require the state manipulation)
+#TODO create the basic look of the card based on the gotten image.
+#TODO need to find how to send request including the body and the header with the request
+#TODO need to find how to use the cors library to permit the frontend server to hit the backend server
+#TODO need to connect the frontend to the backend
